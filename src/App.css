@@ -1,38 +1,377 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.playerStats {
+  display: inline-block;
+  justify-content: left;
+  align-items: left;
+  margin-top: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.playerStats input {
+  width: 100px;
+  height: 20px;
+  font-size: 20px;
+  padding-left: 10px;
+  margin: 5px;
+}
+
+.playerStats button {
+  /* width: 150px;
+  height: 30px;
+  margin-top: 15px; */
+
+}
+
+.players {
+  display: inline-block;
+  justify-content: left;
+  align-items: left;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.player {
+  padding-top: 15px;
+  display: inline-block;
+  justify-content: left;
+  align-items: left;
+}
+
+.playerGrab {
+  width: 70px;
+  height: 50px;
+  border: 1px solid black;
+  margin: 10px;
+  display: flex;
+  padding: 10px;
+}
+
+.playerGrab h3 {
+  margin: 5px;
+  width: 100px;
+}
+
+.showTable {
+  padding-top: 15px;
+  display: inline-block;
+  justify-content: left;
+  align-items: left;
+}
+
+.showTable input {
+  width: 100px;
+  height: 20px;
+  font-size: 20px;
+  padding-left: 10px;
+  margin: 5px;
+}
+
+.selectTable {
+  padding-top: 15px;
+  display: inline-block;
+  justify-content: left;
+  align-items: left;
+}
+
+.selectTable input {
+  width: 100px;
+  height: 20px;
+  font-size: 20px;
+  padding-left: 10px;
+  margin: 5px;
+}
+
+.player input {
+  width: 100px;
+  height: 20px;
+  font-size: 20px;
+  padding-left: 10px;
+  margin: 5px;
+}
+
+.player button {
+  /* width: 150px;
+  height: 30px;
+  margin-top: 15px; */
+}
+
+.spentVP {
+  display: inline-block;
+  justify-content: left;
+  align-items: left;
+  margin-top: 10px;
+}
+
+.spentVP input {
+  width: 100px;
+  height: 20px;
+  font-size: 20px;
+  padding-left: 10px;
+  margin: 5px;
+}
+
+.spentVP button {
+  /* width: 150px;
+  height: 30px;
+  margin-top: 15px; */
+}
+
+.selectsRanked {
+  display: inline-block;
+  justify-content: left;
+  align-items: left;
+  margin-top: 10px;
+}
+
+.selectsRanked input {
+  width: 100px;
+  height: 20px;
+  font-size: 20px;
+  padding-left: 10px;
+  margin: 5px;
+}
+
+.selectsCasual {
+  display: inline-block;
+  justify-content: left;
+  align-items: left;
+  margin-top: 10px;
+}
+
+.selectsCasual input {
+  width: 100px;
+  height: 20px;
+  font-size: 20px;
+  padding-left: 10px;
+  margin: 5px;
+}
+
+.queueMatch {
+  display: inline-block;
+  justify-content: left;
+  align-items: left;
+  margin-top: 10px;
+}
+
+.queueMatch input {
+  width: 100px;
+  height: 20px;
+  font-size: 20px;
+  padding-left: 10px;
+  margin: 5px;
+}
+
+.mapPlayedOn {
+  display: inline-block;
+  justify-content: left;
+  align-items: left;
+  margin-top: 10px;
+}
+
+.mapPlayedOn input {
+  width: 100px;
+  height: 20px;
+  font-size: 20px;
+  padding-left: 10px;
+  margin: 5px;
+}
+
+.matchWasPenalized {
+  display: inline-block;
+  justify-content: left;
+  align-items: left;
+  margin-top: 10px;
+}
+
+.matchWasPenalized input {
+  width: 100px;
+  height: 20px;
+  font-size: 20px;
+  padding-left: 10px;
+  margin: 5px;
+}
+
+.matchContainsAgent {
+  display: inline-block;
+  justify-content: left;
+  align-items: left;
+  margin-top: 10px;
+}
+
+.matchContainsAgent input {
+  width: 100px;
+  height: 20px;
+  font-size: 20px;
+  padding-left: 10px;
+  margin: 5px;
+}
+
+.picksAgent {
+  display: inline-block;
+  justify-content: left;
+  align-items: left;
+  margin-top: 10px;
+}
+
+.picksAgent input {
+  width: 100px;
+  height: 20px;
+  font-size: 20px;
+  padding-left: 10px;
+  margin: 5px;
+}
+
+.generateMatchStats {
+  display: inline-block;
+  justify-content: left;
+  align-items: left;
+  margin-top: 10px;
+}
+
+.generateMatchStats input {
+  width: 100px;
+  height: 20px;
+  font-size: 20px;
+  padding-left: 10px;
+  margin: 5px;
+}
+
+.playsInMatch {
+  display: inline-block;
+  justify-content: left;
+  align-items: left;
+  margin-top: 10px;
+}
+
+.playsInMatch input {
+  width: 100px;
+  height: 20px;
+  font-size: 20px;
+  padding-left: 10px;
+  margin: 5px;
+}
+
+.updatePlayerName {
+  display: inline-block;
+  justify-content: left;
+  align-items: left;
+  margin-top: 10px;
+}
+
+.updatePlayerName input {
+  width: 100px;
+  height: 20px;
+  font-size: 20px;
+  padding-left: 10px;
+  margin: 5px;
+}
+
+.deletePlayer {
+  display: inline-block;
+  justify-content: left;
+  align-items: left;
+  margin-top: 10px;
+}
+
+.deletePlayer input {
+  width: 100px;
+  height: 20px;
+  font-size: 20px;
+  padding-left: 10px;
+  margin: 5px;
+}
+
+.deleteQueueMatch {
+  display: inline-block;
+  justify-content: left;
+  align-items: left;
+  margin-top: 10px;
+}
+
+.deleteQueueMatch input {
+  width: 100px;
+  height: 20px;
+  font-size: 20px;
+  padding-left: 10px;
+  margin: 5px;
+}
+
+.playerPurchasedVP {
+  display: inline-block;
+  justify-content: left;
+  align-items: left;
+  margin-top: 10px;
+}
+
+.playerPurchasedVP input {
+  width: 100px;
+  height: 20px;
+  font-size: 20px;
+  padding-left: 10px;
+  margin: 5px;
+}
+
+.updatePlayerName {
+  display: inline-block;
+  justify-content: left;
+  align-items: left;
+  margin-top: 10px;
+}
+
+.updatePlayerName input {
+  width: 100px;
+  height: 20px;
+  font-size: 20px;
+  padding-left: 10px;
+  margin: 5px;
+}
+
+.updateSpentVP {
+  display: inline-block;
+  justify-content: left;
+  align-items: left;
+  margin-top: 10px;
+}
+
+.updateSpentVP input {
+  width: 100px;
+  height: 20px;
+  font-size: 20px;
+  padding-left: 10px;
+  margin: 5px;
+}
+
+.updateQueueMatch {
+  display: inline-block;
+  justify-content: left;
+  align-items: left;
+  margin-top: 10px;
+}
+
+.updateQueueMatch input {
+  width: 100px;
+  height: 20px;
+  font-size: 20px;
+  padding-left: 10px;
+  margin: 5px;
+}
+
+.JoinPlayerDisplayStats button {
+  margin: 5px;
+}
+
+.AggregateMapPlayedOn button {
+  margin: 5px;
+}
+
+.NestedAggregatePenalty button {
+  margin: 5px;
+}
+
+.DivisionPlayerMVP button {
+  margin: 5px;
 }
